@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2? family = Noto + Sans + JP: wght @ 500 & display = swap');
+</style>
+@import url('https://fonts.googleapis.com/css2? family = Noto + Sans + HK: wght @ 900 & display = swap');
+</style>
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+
+body{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%;
+}
+
+.grid-container{
+	display: grid;
+	
+	grid-template-areas: 
+	"header" 
+	"navbar" 
+	"sidebar" 
+	"footer" ;  
+}
+
+.header{
+	grid-area: header;
+	background-color: #305158;
+}
+
+.navbar{
+	grid-area: navbar;
+	background-color: #F5BE01;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #305158;
+}
+
+@media (min-width: 300px) {
+
+	.grid-container{
+		grid-template:
+    "header 	header" 	100px
+    "navbar		navbar" 	1100px
+    "footer 	footer" 	50px /
+    400px 		auto;
+}
+}
+
+@media (min-width: 600px) {
+
+	.grid-container{
+	grid-template:
+    "header 	header" 	100px
+    "navbar		navbar" 	1100px
+    "footer 	footer" 	50px /
+    auto 		auto;
+}
+}
+
+@media (min-width: 900px) {
+	.grid-container{
+		grid-template:
+		"header		header 	header" 	80px
+		"navbar		navbar	navbar"		1200px
+		"footer		footer 	footer" 	60px/
+		auto 		auto 	auto
+	}
+}
+
+
+.tit1{
+	font-family: 'Noto Sans HK', sans-serif;
+	color: #305158;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.tit2{
+	font-family: 'Noto Sans HK', sans-serif;
+	color: #305158;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.tipo1{
+	margin-top: 1rem;
+	font-family: 'Noto Sans JP', sans-serif;;
+	color: #305158;
+	text-align: center;
+}
+
+.tipo2{
+	margin-top: 1rem;
+	font-family: 'Noto Sans HK', sans-serif;;
+	color: #305158;
+	text-align: center;
+}
+
+.color1{
+	margin-top: 1rem;
+	font-family: 'Noto Sans JP', sans-serif;;
+	color: #305158;
+	text-align: center;
+	margin-left: 10rem;
+	float: left;
+}
+
+.color2{
+	margin-top: 1rem;
+	font-family: 'Noto Sans JP', sans-serif;;
+	color: #305158;
+	text-align: center;
+	margin-right: 10rem;
+	float: right;
+}
+
+.nombre{
+	
+	font-family: 'Noto Sans HK', sans-serif;
+	color: #FED701;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: 
+	padding: 1rem;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+	color: #FED701;
+}
+
+
+li{
+	float: left;
+	list-style: none;
+	padding: 0.5rem;
+}
+
+a{
+	text-decoration: none;
+	font-family: 'Noto Sans HK', sans-serif;
+	color: #FED701;
+	font-size: 1.5rem;
+}
+li:hover a{
+	color: white;
+}
+
+.wrapper{
+	margin-top: 5rem;
+}
+
+
+.wrapper a{
+	width: 40%;
+	float: center;
+	padding: 2%;
+	margin-left: 1.7rem;
+
+}
+

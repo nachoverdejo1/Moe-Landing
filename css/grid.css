@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2? family = Noto + Sans + JP: wght @ 500 & display = swap');
+</style>
+@import url('https://fonts.googleapis.com/css2? family = Noto + Sans + HK: wght @ 900 & display = swap');
+</style>
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+
+body{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%;
+}
+
+.grid-container{
+	display: grid;
+	
+	grid-template-areas: 
+	"header" 
+	"navbar" 
+	"main" 
+	"sidebar" 
+	"footer" ;  
+}
+
+.header{
+	grid-area: header;
+	background-color: #305158;
+}
+
+.navbar{
+	grid-area: navbar;
+	background-color: #535c68;
+}
+
+.main{
+	grid-area: main;
+	background-color: #FECE01;
+}
+
+.sidebar{
+	grid-area: sidebar;
+	background-color: #FECE01;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #305158;
+}
+
+@media (min-width: 300px) {
+
+	.grid-container{
+		grid-template:
+    "header 	header" 	100px
+    "main 		main" 		350px
+    "sidebar 	sidebar" 	500px
+    "footer 	footer" 	50px /
+    400px 		auto;
+}
+}
+
+@media (min-width: 600px) {
+
+	.grid-container{
+	/*background-color: black;
+	grid-template-columns: 200px auto;
+	grid-template-rows: 100px 50px auto 100px;
+    
+    grid-template-areas: 
+    "header header"
+    "navbar navbar"
+    "sidebar main"
+    "footer footer";*/
+
+    grid-template:
+    "header 	header" 	100px
+    "main 		main" 		400px
+    "sidebar 	sidebar" 	450px
+    "footer 	footer" 	50px /
+    400px 		auto;
+}
+}
+
+
+img{
+	margin-top: 10px;
+	margin-left: 10px;
+
+}
+
+
+@media (min-width: 900px) {
+	.grid-container{
+		grid-template:
+		"header		header 	header" 	80px
+		"main 		main 	sidebar" 	auto
+		"footer		footer 	footer" 	50px/
+		300px 		auto 	400px
+	}
+}
+
+.formu{
+	width: 60%;
+	height: 10rem;
+	background-color: #305158;
+	margin-left: 5.2rem;
+	color: #FED701;
+	border-radius: 0.4rem;
+	margin-top: 1rem;
+	text-align: center;
+
+}
+
+
+.sidebar{
+	background: url(../img/1.png);
+	background-size: cover;
+	background-position: center center;
+}
+
+.main{
+	background: url(../img/imagen3.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.txt{
+	
+	margin-top: 1rem;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #305158;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.tit{
+	margin-top: 1rem;
+	font-family: 'Noto Sans HK', sans-serif;
+	color: #305158;
+	text-align: center;
+	}
+
+.info{
+	margin-top: ;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #305158;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.tit2{
+	margin-top: 1rem;
+	font-family: 'Noto Sans HK', sans-serif;
+	color: #305158;
+	text-align: center;
+}
+
+.boton{
+	width: 100%;
+	min-width: 8rem;
+	background-color: #305158;
+	border: none;
+	border-radius: 0.5rem;
+	color: white;
+	margin-top: 0.5rem;
+	align-content: center;
+	font-size: 1rem;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.boton:hover{
+	transition: all 0.3s ease;
+	background-color: #C32124;
+}
+
+.nombre{
+	
+	font-family: 'Noto Sans HK', sans-serif;
+	color: #FED701;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: 
+	padding: 1rem;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+	color: #FED701;
+}
+
+.redes{
+	float: right;
+	margin-right: 0.5rem;
+}
